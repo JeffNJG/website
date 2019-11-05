@@ -1,0 +1,670 @@
+format 221
+"pycm"
+  revision 1
+  modified_by 2 "jefcolbi"
+
+
+  
+  // class settings
+  default_attribute_visibility private default_relation_visibility private default_operation_visibility public
+  
+  classdiagramsettings draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no hide_ports no show_members_full_definition no show_members_visibility no show_members_stereotype no show_members_context no show_members_multiplicity no show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
+  
+  classcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  usecasediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes gradient none show_stereotype_properties no end
+  
+  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally yes instances_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
+  
+  collaborationdiagramsettings show_full_operations_definition no show_class_of_operation no show_hierarchical_rank no write_horizontally yes instances_drawing_mode natural drawing_language uml package_name_in_tab no show_class_pack_context_mode no show_msg_context_mode no draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectdiagramsettings write_horizontally yes package_name_in_tab no show_class_pack_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  componentdiagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  deploymentdiagramsettings package_name_in_tab no show_context_mode no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  statediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes write_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes gradient none
+   show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no end
+  
+  activitydiagramsettings package_name_in_tab no show_context_mode no show_opaque_action_definition no auto_label_position yes write_label_horizontally no draw_all_relations yes shadow yes gradient none
+   show_infonote yes drawing_language uml show_stereotype_properties no end
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white generalization_color black 
+  dpi 96
+  font_size 9
+  diagram_format A4
+
+  image_root_dir ""
+
+
+  mark_for_import
+  
+  classview 128002 "cv"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    classdiagram 128002 "base"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    class 128002 "User"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "l'utilisateur de base sur le site."
+      attribute 128002 "username"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "Le username de l'utilisateur"
+      end
+
+      attribute 128130 "email"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "L'email de l'utilisateur"
+      end
+
+      attribute 128258 "first_name"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "les prénoms de l'utilisateur"
+      end
+
+      attribute 128386 "last_name"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "les noms de famille de l'utilisateur"
+      end
+
+      attribute 128514 "password"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "Le mot de passe de l'utilisateur"
+      end
+
+      classrelation 128002 // (possede)
+	relation 128002 ---- name "possede"
+	  a role_name "" multiplicity "1" private
+	    comment "un utilisateur possède un et un seul profil"
+	    classrelation_ref 128002 // (possede)
+	  b role_name "" multiplicity "1" private
+	    comment "un profil appartient à un et un seul utilisateur"
+	    classrelation_ref 128130 // (possede)
+      end
+
+      classrelation 128386 // (participe)
+	relation_ref 128130 // participe
+      end
+
+      classrelation 128770 // (appartient)
+	relation 128386 ---- name "appartient"
+	  a role_name "" multiplicity "1" private
+	    comment "un utilisateur appartient à un et un seul group local"
+	    classrelation_ref 128770 // (appartient)
+	  b role_name "" multiplicity "*" private
+	    comment "un group local peut avoir un ou plus utilisateurs"
+	    classrelation_ref 128898 // (appartient)
+	  association_type class_ref 128898 // Participation
+      end
+
+      classrelation 129154 // (redige)
+	relation_ref 128514 // redige
+      end
+
+      classrelation 129282 // (publie)
+	relation 128642 ---- name "publie"
+	  a role_name "" multiplicity "*" private
+	    comment "un utilisateur peut publider 0 ou plusieurs elements"
+	    classrelation_ref 129282 // (publie)
+	  b role_name "" multiplicity "1" private
+	    comment "un evenement ne peut etre publié que par un seul utilisateur"
+	    classrelation_ref 129410 // (publie)
+      end
+    end
+
+    class 128130 "Profile"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Un profil est rataché à un utilisateur et un seul. Il permet d'avoir des informations supplementaires sur l'utilisateur"
+      attribute 128642 "number"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "son numero GSM"
+      end
+
+      attribute 128770 "whatsapp"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "son  numero whatsapp"
+      end
+
+      attribute 128898 "twitter"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "twitter handle"
+      end
+
+      attribute 129026 "telegram"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "telegram username"
+      end
+
+      attribute 129154 "facebook"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "facebook profile link"
+      end
+
+      attribute 129282 "skype"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "skype id"
+      end
+
+      attribute 129410 "github"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129538 "gitlab"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129666 "email"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "public email"
+      end
+
+      classrelation 128130 // (possede)
+	relation_ref 128002 // possede
+      end
+    end
+
+    class 128258 "Project"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Un projet realisé par la communauté"
+      attribute 129794 "name"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "the name of the project"
+      end
+
+      attribute 129922 "description"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "La description du projet. ecrit en markdown"
+      end
+
+      attribute 130050 "link"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "lien vers un depot git du projet"
+      end
+
+      classrelation 128258 // (participe)
+	relation 128130 ---- name "participe"
+	  a role_name "" multiplicity "*" private
+	    comment "un projet peut accepter un ou plusieurs utilisateurs"
+	    classrelation_ref 128258 // (participe)
+	  b role_name "" multiplicity "*" private
+	    comment "un ou plusieurs utilisateurs peuvent participer à un projet"
+	    classrelation_ref 128386 // (participe)
+      end
+    end
+
+    class 128386 "Event"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Un evenement de la communauté"
+      attribute 130178 "name"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "nom de l'evenement"
+      end
+
+      attribute 130306 "description"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "description de l'evenement"
+      end
+
+      attribute 130434 "start"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "la date et l'heure du debut de l'evenement"
+      end
+
+      attribute 130562 "end"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "la date et l'heure de la fin de l'evenement"
+      end
+
+      attribute 130690 "location"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "le lieu de l'evenement"
+      end
+
+      classrelation 128642 // (contient)
+	relation_ref 128258 // contient
+      end
+
+      attribute 131202 "type"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "type de l'evenmenent"
+      end
+
+      classrelation 129410 // (publie)
+	relation_ref 128642 // publie
+      end
+    end
+
+    class 128514 "EventMedia"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Un media (Image ou  video) lié à l'evenement"
+      attribute 130818 "type"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "le type du media (jpg, png, mp4)"
+      end
+
+      attribute 130946 "url"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "l'url pour acceder au media"
+      end
+
+      attribute 131074 "miniature"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "l'url de la miniature"
+      end
+
+      classrelation 128514 // (contient)
+	relation 128258 ---- name "contient"
+	  a role_name "" multiplicity "1" private
+	    comment "un media appartient à un et un seul evenement"
+	    classrelation_ref 128514 // (contient)
+	  b role_name "" multiplicity "*" private
+	    comment "un evenement peut avoir un ou plusieurs medias"
+	    classrelation_ref 128642 // (contient)
+      end
+    end
+
+    class 128642 "Article"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 131330 "title"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "titre de l'article"
+      end
+
+      attribute 131458 "image"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "url de l'image"
+      end
+
+      attribute 131586 "content"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "contenu de l'article. en markdown"
+      end
+
+      classrelation 129026 // (redige)
+	relation 128514 ---- name "redige"
+	  a role_name "" multiplicity "1" private
+	    comment "un article est redigé par un et un seul utilisateur"
+	    classrelation_ref 129026 // (redige)
+	  b role_name "" multiplicity "*" private
+	    comment "un utilisateur peut poster un ou plusieurs articles"
+	    classrelation_ref 129154 // (redige)
+      end
+    end
+
+    class 128770 "ChildGroup"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Un child group est une communauté locale (dans une université, une ville)"
+      attribute 131714 "url"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "l'url pour acceder au site du groupe local"
+      end
+
+      attribute 131842 "region"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "region ou se trouve le groupe"
+      end
+
+      attribute 131970 "city"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "la ville où se trouve le groupe"
+      end
+
+      attribute 132098 "etablissement"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "Etablissement où se trouve le groupe"
+      end
+
+      classrelation 128898 // (appartient)
+	relation_ref 128386 // appartient
+      end
+    end
+
+    class 128898 "Participation"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Information sur la participation d'un membre dans un groupe local"
+      attribute 132226 "role"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "le role du user dans le groupe local"
+      end
+
+      attribute 132354 "join_date"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "la date d'entrée dans le groupe"
+      end
+    end
+  end
+end

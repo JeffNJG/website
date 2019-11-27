@@ -6,5 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('', HomeView.as_view()),
+    path('<str>/', HomeView.as_view()),
     path('signup/', SignupView.as_view()),
 ]

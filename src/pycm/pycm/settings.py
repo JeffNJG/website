@@ -25,7 +25,7 @@ SECRET_KEY = '817q=vd5h__&ugv7_-dyv5521l!ioo2iyeq^6v*4nx4dnu&y^h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'py-cm.org']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'py-cm.org', 'www.py-cm.org']
 
 
 # Application definition
@@ -105,7 +105,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LOCALE_PATHS = [os.path.join(BASE_DIR, "locales")]
+
+gettext = lambda x: x
+LANGUAGES = (
+    ('fr', gettext('Français')),
+    ('en', gettext('English')),
+)
 
 TIME_ZONE = 'UTC'
 

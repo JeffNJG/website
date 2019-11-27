@@ -29,7 +29,7 @@
 		<div class="branding">
 			<div class="container-fluid">
 				<nav class="main-nav navbar navbar-expand-lg">
-					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="/static/images/logo-white.svg" alt="logo"></a></div>    
+					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="/static/images/logo-rect.png" alt="logo"></a></div>    
 					
 					
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +57,6 @@
 		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item-1 carousel-item active">
-				</div>
-				<div class="carousel-item-2 carousel-item">
-				</div>
-				<div class="carousel-item-3 carousel-item">
 				</div>
 			</div>
 		</div>
@@ -105,19 +101,19 @@
 
 	<section id="about-section" class="about-section section theme-bg-light">
 		<div class="container">
-			<h3 class="section-heading text-center mb-3">About DevConf</h3>
-			<div class="section-intro single-col-max mx-auto mb-4">Briefly introduce your conference or event here. You should convince people why they should attend with a list of benefits. <strong>Are you a conference organizer? Want to source developer t-shirts as part of your conference package?</strong> Check out our programming tees at <a href="https://made4dev.com/" target="_blank">made4dev.com</a> - developers love them! Want to get a bulk discount or just want to use one of the t-shirt designs? Please email <a href="mailto:hello@made4dev.com">hello@made4dev.com</a> and we can discuss.</div>
+			<h3 class="section-heading text-center mb-3">About Py-UY1</h3>
+			<div class="section-intro single-col-max mx-auto mb-4">{% trans "Py-UY1 is the first step to build an awesome Python community in all over the Cameroon." %} <strong>{% trans "Are you a student, a developer or an entrepreuneur? If yes, then you will surely find Python valuable for you." %}</strong> {% trans "To discover how Python can help you in your daily life, check this link" %} <a href="https://hackernoon.com/10-reasons-to-learn-python-in-2018-f473dc35e2ee" target="_blank">hackernoon.com</a> {% trans "and if you like then suscribe to the event via this" %} <a href="https://docs.google.com/forms/d/1uhFnTvFJTTTdn4IfRQ9e6Lb2srA9it5bmfYBWXrKqfc/">{% trans "Google form" %}</a> {% trans "and be part of the venture." %}</div>
 			<div class="benefits-list text-center mb-3">
-				<h4 class="text-center mb-4">Why Join Us</h4>
+				<h4 class="text-center mb-4">{% trans "Why Join Us" %}</h4>
 				<ul class="list-unstyled text-left d-inline-block">
-					<li><i class="fas fa-check-circle mr-2"></i>Unique chance to lorem ipsum dolor</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Learn from the best in the industry</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Discover the best tools and practices</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Meet developers from all over the world</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Grow your network</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Practical workshops to lorem ipsum dolor</li>
-					<li><i class="fas fa-check-circle mr-2"></i>After-party lorem ipsum dolor</li>
-					<li><i class="fas fa-check-circle mr-2"></i>Free <a href="https://made4dev.com">developer t-shirts</a> and swag</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Be part of an awesome community." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Learn and get help in Python." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Discover great tools to help in your work." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Meet other developers in Yaounde." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Grow your network." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Contribute to local and international open source projets." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Find contributors for your Python projects." %}</li>
+					<li><i class="fas fa-check-circle mr-2"></i>{% trans "Free t-shirts and swag." %}</li>
 				</ul>
 			</div><!--//benefits-list-->
 			<div class="event-countdown text-center mb-3">		   
@@ -132,18 +128,38 @@
 	<section id="speakers-section" class="speakers-section section">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Speakers</h3>
-			<div class="section-intro text-center single-col-max mx-auto mb-5">List your featured speakers here. You can provide more info about each speaker in the relevant modal windows. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			<div class="section-intro text-center single-col-max mx-auto mb-5">{% trans "Here is the list of our featured speakers." %}</div>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
 					<div class="card rounded-0">
 						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-1.jpg" class="card-img-top rounded-0" alt=""></a>
 						<div class="card-body">
-							<h5 class="card-title mb-2">James Doe</h5>
+							<h5 class="card-title mb-2">ELIE Cédric KOUEKAM</h5>
 							<div class="card-text mb-3">
-								<div class="meta">Senior Software Developer</div>
-								<div class="meta">Angular Core Team</div>
+								<div class="meta">{% trans "Software Engineer" %}</div>
+								<div class="meta"><i>{% trans "Private" %}</i></div>
 							</div><!--//card-text-->
 							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
+						</div><!--//card-->
+						<div class="card-footer text-muted">
+							<ul class="social-list list-inline mb-0">
+								<li class="list-inline-item"><a  href="https://twitter.com/CedricElie"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							</ul><!--//social-list-->
+						</div>
+					</div><!--//card-->
+				</div><!--//col-->
+				<div class="col-12 col-md-6 col-lg-3 mb-4">
+					<div class="card rounded-0">
+						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/avatar.png" class="card-img-top rounded-0" alt=""></a>
+						<div class="card-body">
+							<h5 class="card-title mb-2">Waiting Confirmation</h5>
+							<div class="card-text mb-3">
+								<div class="meta">{% trans "Lead developer" %}</div>
+								<div class="meta"><i>{% trans "Private" %}</i></div>
+							</div><!--//card-text-->
+							<a href="#modal-speaker-2" data-toggle="modal" data-target="#modal-speaker-2">Read more &rarr;</a>
 						</div><!--//card-->
 						<div class="card-footer text-muted">
 							<ul class="social-list list-inline mb-0">
@@ -156,34 +172,14 @@
 				</div><!--//col-->
 				<div class="col-12 col-md-6 col-lg-3 mb-4">
 					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-2.jpg" class="card-img-top rounded-0" alt=""></a>
+						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/avatar.png" class="card-img-top rounded-0" alt=""></a>
 						<div class="card-body">
-							<h5 class="card-title mb-2">Sarah Doe</h5>
+							<h5 class="card-title mb-2">{% trans "Waiting Confirmation" %}</h5>
 							<div class="card-text mb-3">
-								<div class="meta">Developer Advocate</div>
-								<div class="meta">Google</div>
+								<div class="meta">{% trans "Entrepreneur" %}</div>
+								<div class="meta"><i>{% trans "Private" %}</i></div>
 							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-3.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Tim Doe</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Software Developer</div>
-								<div class="meta">React Core Team</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
+							<a href="#modal-speaker-3" data-toggle="modal" data-target="#modal-speaker-3">Read more &rarr;</a>
 						</div><!--//card-->
 						<div class="card-footer text-muted">
 							<ul class="social-list list-inline mb-0">
@@ -198,12 +194,12 @@
 					<div class="card rounded-0">
 						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-4.jpg" class="card-img-top rounded-0" alt=""></a>
 						<div class="card-body">
-							<h5 class="card-title mb-2">Josh Doe</h5>
+							<h5 class="card-title mb-2">MATTON Jef</h5>
 							<div class="card-text mb-3">
-								<div class="meta">Founder &amp; CTO</div>
-								<div class="meta">Startup Week</div>
+								<div class="meta">{% trans "Python developer" %}</div>
+								<div class="meta">MboateK</div>
 							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
+							<a href="#modal-speaker-4" data-toggle="modal" data-target="#modal-speaker-4">{% trans "Read more" %} &rarr;</a>
 						</div><!--//card-->
 						<div class="card-footer text-muted">
 							<ul class="social-list list-inline mb-0">
@@ -213,87 +209,7 @@
 							</ul><!--//social-list-->
 						</div>
 					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-5.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Ling Doe</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Software Architect</div>
-								<div class="meta">GitHub</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-6.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Andy Doe</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Senior Software Engineer</div>
-								<div class="meta">Twitter</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-7.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Alice Doe</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Senior Software Developer</div>
-								<div class="meta">Facebook</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-12 col-md-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img src="/static/images/speakers/speaker-8.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Thomas Doe</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Lead Developer</div>
-								<div class="meta">Microsoft</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
+				</div><!--//col-->				
 			</div><!--//row-->
 			<div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div>
 		</div><!--//container-->
@@ -313,19 +229,7 @@
 				<li class="nav-item mr-2">
 					<a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
 						<span class="heading">Day 1</span>
-						<span class="meta">(Wed 12, Oct)</span>
-					</a>
-				</li>
-				<li class="nav-item mr-2">
-					<a class="nav-link" id="tab-2" data-toggle="tab" href="#tab-2-content" role="tab" aria-controls="tab-2-content" aria-selected="false">
-						<span class="heading">Day 2</span>
-						<span class="meta">(Thu 13, Oct)</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="tab-3" data-toggle="tab" href="#tab-3-content" role="tab" aria-controls="tab-3-content" aria-selected="false">
-						<span class="heading">Day 3</span>
-						<span class="meta">(Fri 14, Oct)</span>
+						<span class="meta">(Sat 7, Dec)</span>
 					</a>
 				</li>
 			</ul>
@@ -335,202 +239,180 @@
 				<div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">9:00 - 9:30</h4>
+							<h4 class="time mb-3">10:00 - 10:15</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-1.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">James Doe</a></div>
+								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-4.jpg" alt=""></a>
+								<div class="name"><a class="theme-link" href="#modal-speaker-4" data-toggle="modal" data-target="#modal-speaker-4">MATTON Jef</a></div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Best Practices And Tips For A Clean Angular Application</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">{% trans "Welcome and presentation of the community" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc"><br>{% trans "Present the story of the Community" %}</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">9:30 - 10:00</h4>
+							<h4 class="time mb-3">10:20 - 10:50</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-2.jpg" alt=""></a>
+								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-.jpg" alt=""></a>
 								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Sarah Doe</a></div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Developer Productivity</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-other">
-						<div class="meta">
-							<h4 class="time mb-3">10:00 - 10:30</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Coffee Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Room A5</div>
-							<div class="desc">Coffee and cakes lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+							<h3 class="title mb-3">{% trans "1st talk" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Share his experience on using Python on his work and hobbies." %}<br>
+							<i>{% trans "Private content, come to discover" %}</i></div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">10:30 - 11:00</h4>
+							<h4 class="time mb-3">10:55 - 11:25</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-3.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Tim Doe</a></div>
+								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-2.jpg" alt=""></a>
+								<div class="name"><a class="theme-link" href="#modal-speaker-2" data-toggle="modal" data-target="#modal-speaker-2">Sarah Doe</a></div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Progressive Web Apps with React.js</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">{% trans "2nd talk" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Share his experience on using Python on his work and hobbies." %}<br>
+							<i>{% trans "Private content, come to discover" %}</div>
 						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
+					</div><!--//item-->					
+					<div class="item item-other">
 						<div class="meta">
-							<h4 class="time mb-3">11:00 - 12:00</h4>
+							<h4 class="time mb-3">11:30 - 11:40</h4>
 							<div class="profile">
 								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-4.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Josh Doe</a></div>
+								<div class="name"><a class="theme-link" href="#modal-speaker-4" data-toggle="modal" data-target="#modal-speaker-4">MATTON Jef</a></div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room B</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">{% trans "Presentation of the PSF" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Give a good presentation of the PSF." %}<br>
+							{% trans "Their goals and actions for promoting Python usage" %}</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-talk">
+						<div class="meta">
+							<h4 class="time mb-3">11:45 - 12:15</h4>
+							<div class="profile">
+								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-3.jpg" alt=""></a>
+								<div class="name"><a class="theme-link" href="#modal-speaker-3" data-toggle="modal" data-target="#modal-speaker-3">Sarah Doe</a></div>
+							</div><!--//profile-->
+						</div><!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">{% trans "3rd talk" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Share his experience on using Python on his work and hobbies." %}<br>
+							<i>{% trans "Private content, come to discover" %}</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-other">
 						<div class="meta">
-							<h4 class="time mb-3">12:00 - 13:30</h4>
+							<h4 class="time mb-3">12:20 - 12:55</h4>
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Lunch Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Room B6</div>
-							<div class="desc">Buffet lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">13:30 - 14:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-5.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Ling Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">14:30 - 15:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-6.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Andy Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">15:30 - 16:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-7.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Alice Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">16:30 - 17:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="/static/images/speakers/speaker-8.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1">Thomas Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">Quizz</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Let the speakers ask question about Python and those who give the good answer get free t-shirts." %} </div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-other">
 						<div class="meta">
-							<h4 class="time mb-3">18:00 - 24:00</h4>
+							<h4 class="time mb-3">13:00 - 13:10</h4>
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Dinner &amp; After-party</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>Bar Lorem Ipsum</div>
-							<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">{% trans "Action plan" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Explain the activities the community will do on regular basis to stay alive" %}<br>
+							{% trans "Explain how the community is structured" %}</div>
 						</div><!--//content-->
 					</div><!--//item-->
+					<div class="item item-other">
+						<div class="meta">
+							<h4 class="time mb-3">13:15 - 13:45</h4>
+						</div><!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">{% trans "Feedbacks and propositions" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Get feedback from attendees about the launch and the community." %}<br>
+							{% trans "Get attendees propositions on how to make the community and Python ecosystem in Cameroon more attractives." %}</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-other">
+						<div class="meta">
+							<h4 class="time mb-3">13:50 - 14:00</h4>
+						</div><!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">{% trans "Family photo" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Take unforgettable photos of the family and share them on social networks" %}</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-other">
+						<div class="meta">
+							<h4 class="time mb-3">14:00</h4>
+						</div><!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">{% trans "Lunch" %}</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt mr-2"></i>S01</div>
+							<div class="desc">{% trans "Lunching while doing in-members discussions." %}</div>
+						</div><!--//content-->
+					</div><!--//item-->					
 					
 				</div><!--//tab-1-content-->
-				<div class="tab-pane no-timeline" id="tab-2-content" role="tabpanel" aria-labelledby="tab-2">
-					<h4 class="text-center py-5 text-muted">Day 2 Agenda Coming Soon...</h4>
-				</div><!--//tab-2-content-->
-				<div class="tab-pane no-timeline" id="tab-3-content" role="tabpanel" aria-labelledby="tab-3">
-					<h4 class="text-center py-5 text-muted">Day 3 Agenda Coming Soon...</h4>
-				</div><!--//tab-3-content-->
+				
 			</div><!--//schedule-tab-content-->
-			<div class="schedule-cta text-center mx-auto"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" class="btn btn-primary btn-lg mr-md-2 d-block d-md-inline-block mb-3 mb-md-0" target="_blank">Download Schedule</a><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">Buy Tickets</a></div>
+			<div class="schedule-cta text-center mx-auto"><a href="#" class="btn btn-primary btn-lg mr-md-2 d-block d-md-inline-block mb-3 mb-md-0" target="_blank">{% trans "Download Schedule" %}</a><a href="https://docs.google.com/forms/d/1uhFnTvFJTTTdn4IfRQ9e6Lb2srA9it5bmfYBWXrKqfc/" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">{% trans "Suscribe" %}</a></div>
 		</div><!--//container-->
 	</section><!--//schedule-section-->
 		
 	
 	<section id="venue-section" class="venue-section section  theme-bg-primary text-white">
 		<div class="container">
-			<h3 class="section-heading text-center mb-5 text-white">Venue</h3>
+			<h3 class="section-heading text-center mb-5 text-white">{% trans "Venue" %}</h3>
 			<div class="row py-lg-5">
 				<div class="col-12 col-lg-7 h-100">
 					<div class="desc">
-						<h4 class="text-white mb-3">How To Get Here</h4>
-						<p>Your venue info goes here. Sed feugiat nibh lorem, a laoreet sem aliquet ut. Praesent tincidunt efficitur nisi, ut eleifend diam tempor sit amet. Aliquam volutpat ex feugiat, semper urna a, pharetra lacus. Sed eget eros cursus, consequat lectus ultricies, efficitur metus. Sed sit amet mauris faucibus magna finibus convallis vel quis justo. Curabitur ultricies sagittis erat, quis faucibus lectus tempor vitae. Proin sodales, elit vitae accumsan efficitur, orci quam molestie orci, accumsan tincidunt dui turpis sed libero. Duis id vehicula ex. In quis pellentesque lorem, ut sollicitudin mauris.</p>
+						<h4 class="text-white mb-3">{% trans "How To Get Here" %}</h4>
+						<p>{% trans "In any point of Yaounde city just take a taxi with University of Yaounde 1 as destination. Or you can just say \"Ngoa ekelle\". This is a common place that is known by almost all taxi-drivers. Once you are in the university, ask for the new pedagogic bloc. The meeting will take place at the S001/S002 auditorium. You can ask to any one you will encounter in the university the right direction." %}<br>
+							{% trans "You can use this Google Maps location" %} <a href="https://www.google.com/maps/@3.8573215,11.5003699,18.75z" class="text-warning" target="_blank">S001/S002</a></p>
 						
 						<div class="row pt-3">
 							<div class="col-12 col-md-6 mb-4">
 								<div class="grid-item p-4">
-									<h5 class="text-white mb-3 title"><i class="fas fa-plane-departure mr-2"></i>By Plane</h5>
-									<p>Aliquam gravida, enim et efficitur feugiat, tellus ligula scelerisque orci, et sagittis erat lectus sit amet orci.</p>
-									<a class="text-white" href="#">Search Tickets &rarr;</a>
+									<h5 class="text-white mb-3 title"><i class="fas fa-plane-departure mr-2"></i>{% trans "By Plane" %}</h5>
+									<p>{% trans "Get a fly for Yaounde Nsimalen airport. Then take a taxi for the university." %}</p>
+									<a class="text-white" href="#">{% trans "Search Tickets" %} &rarr;</a>
 								</div><!--//grid-item-->
 							</div><!--col-->
 							<div class="col-12 col-md-6 mb-4">
 								<div class="grid-item p-4">
-									<h5 class="text-white mb-3 title"><i class="fas fa-car mr-2"></i>By Car</h5>
-									<p>Aliquam gravida, enim et efficitur feugiat, tellus ligula scelerisque orci, et sagittis erat lectus sit amet orci.</p>
-									<a class="text-white" href="#">Check Route &rarr;</a>
+									<h5 class="text-white mb-3 title"><i class="fas fa-car mr-2"></i>{% trans "By Bus" %}</h5>
+									<p>{% trans "If you are in another region of Cameroun, just take a travel agency, and once you are in Yaounde take a taxi" %}</p>
+									<a class="text-white" href="#">{% trans "Check Route" %} &rarr;</a>
 								</div><!--//grid-item-->
 							</div><!--col-->
 							<div class="col-12 col-md-6 mb-4">
 								<div class="grid-item p-4">
-									<h5 class="text-white mb-3 title"><i class="fas fa-bus-alt mr-2"></i>By Bus</h5>
-									<p>Aliquam gravida, enim et efficitur feugiat, tellus ligula scelerisque orci, et sagittis erat lectus sit amet orci. </p>
-									<a class="text-white" href="#">Book Tickets &rarr;</a>
+									<h5 class="text-white mb-3 title"><i class="fas fa-bus-alt mr-2"></i>{% trans "By Car" %}</h5>
+									<p>{% trans "Use the Google Map location to find your way" %}</p>
+									<a class="text-white" href="#">{% trans "Book Tickets" %} &rarr;</a>
 								</div><!--//grid-item-->
 							</div><!--col-->
 							<div class="col-12 col-md-6 mb-4">
 								<div class="grid-item p-4">
-									<h5 class="text-white mb-3 title"><i class="fas fa-subway mr-2"></i>By Train</h5>
-									<p>Aliquam gravida, enim et efficitur feugiat, tellus ligula scelerisque orci, et sagittis erat lectus sit amet orci.</p>
-									<a class="text-white" href="#">Book Tickets &rarr;</a>
+									<h5 class="text-white mb-3 title"><i class="fas fa-subway mr-2"></i>{% trans "By Train" %}</h5>
+									<p>{% trans "If you are in another region of Cameroun, you can take a train, and once you are in Yaounde take a taxi" %}</p>
+									<a class="text-white" href="#">{% trans "Book Tickets" %} &rarr;</a>
 								</div><!--//grid-item-->
 							</div><!--col-->
 						</div><!--//row-->
-						<h4 class="text-white mb-4 mt-3 mt-lg-5">Facilities &amp; Accommodations</h4>
-						<p>Your venue info goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat magna eu accumsan mattis. Duis non augue porttitor, fringilla velit vitae, ultricies eros. Sed libero eros, tristique ac orci nec, hendrerit dictum lacus. Aenean iaculis massa felis, eget venenatis turpis lacinia sit amet. </p>
-						<a class="btn btn-ghost" href="#">Search Hotels</a>
+						
 					</div><!--//desc-->
 				</div><!--//col-->
 				<div class="col-12 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
@@ -548,22 +430,13 @@
 	<section id="sponsors-section" class="sponsors-section section">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Sponsors &amp; Partners</h3>
-			<div class="section-intro text-center single-col-max mx-auto mb-5">Want to become a sponsor? Get in touch lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat magna eu accumsan mattis.</div>
+			<div class="section-intro text-center single-col-max mx-auto mb-5">{% trans "Want to become a sponsor? Here are our current list of partners." %}</div>
 			<div class="row logos justify-content-center">
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-1.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-2.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-3.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-4.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-5.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-6.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-7.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-8.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-9.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-10.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-11.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/logo-12.svg" alt=""></div>
+				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/psf.png" alt="Python Software Foundation" title="Python Software Foundation"></div>
+				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="/static/images/logos/comsas.png" alt="Computer Science Association" title="Computer Science Association"></div>
+				
 			</div><!--//row-->
-			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div>
+			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="mailto:jefcolbi@hotmail.com">Become A Sponsor</a></div>
 		</div><!--//container-->
 	</section><!--//sponsors-section-->
 
@@ -572,14 +445,14 @@
 			
 			<ul class="social-list list-inline mb-4"> 
 				<li class="list-inline-item mr-3"><a href="#"><i class="fas fa-envelope"></i></a></li>
-				<li class="list-inline-item mr-3"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-				<li class="list-inline-item mr-3"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-				<li class="list-inline-item mr-0"><a href="#"><i class="fab fa-youtube fa-fw"></i></a></li>
+				<li class="list-inline-item mr-3"><a href="https://twitter.com/PythonCameroun/"><i class="fab fa-twitter fa-fw"></i></a></li>
+				<li class="list-inline-item mr-3"><a href="https://github.com/py-cm/"><i class="fab fa-github fa-fw"></i></a></li>
+				<li class="list-inline-item mr-0"><a href="https://t.me/pythonuy1"><i class="fab fa-telegram fa-fw"></i></a></li>
 			</ul><!--//social-list-->
 			
 			
 			<ul class="footer-links list-inline mx-auto mb-4">
-				<li class="list-inline-item"><a href="#">Code of Conduct</a></li>
+				<li class="list-inline-item"><a href="https://www.python.org/psf/conduct/">Code of Conduct</a></li>
 				<li class="list-inline-item">|</li>
 				<li class="list-inline-item"><a href="#">Terms</a></li>
 				<li class="list-inline-item">|</li>
@@ -587,7 +460,8 @@
 			</ul><!--//footer-link-->
 			
 			<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small><br>
+			<small class="copyright">Powered by <a href="https://www.djangoproject.com" target="_blank">Django</a></small>
 			
 		</div><!--//container-->	    
 	</footer>
@@ -619,6 +493,39 @@
 					<div class="desc p-4 p-lg-5">
 						<p>You can put speaker's bio or talk related info here. Duis a mi quis metus porttitor eleifend. Pellentesque finibus ultrices imperdiet. Maecenas auctor tortor quis risus tincidunt, mattis mattis leo placerat. Fusce metus augue, sagittis eget enim vel, venenatis auctor est. In interdum felis massa, ac porta nunc pretium non. In fringilla orci vitae imperdiet malesuada. Vestibulum feugiat lobortis est, in sagittis nisi molestie vel. Mauris ultrices vitae lectus eu feugiat. Fusce semper, nisi at placerat mollis, augue elit pretium enim, eu pellentesque justo purus et lectus. </p>
 						<p class="mb-0">Donec neque magna, molestie vel varius ut, pretium a urna. Pellentesque placerat nunc eu condimentum pellentesque. Vivamus dictum nisl leo, id fermentum lectus porttitor et. Pellentesque tristique erat libero, condimentum porttitor nisl pharetra et.</p>
+					</div>
+				</div><!--//modal-body-->
+			</div><!--//modal-content-->
+		</div><!--//modal-dialog-->
+	</div><!--//modal-->
+
+	<!-- Modal Speaker -->
+	<div class="modal modal-speaker modal-speaker-4" id="modal-speaker-4" tabindex="-1" role="dialog" aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 id="speaker-1-ModalLabel" class="modal-title sr-only">MATTON Jef</h4>
+				</div>
+				<div class="modal-body p-0">
+					<div class="media flex-column flex-md-row theme-bg-light p-4 p-lg-5">
+						<img class="profile-image mb-3 mb-md-0 mr-md-4 rounded-circle mx-auto" src="/static/images/speakers/speaker-4.jpg" alt="" />
+						
+						<div class="media-body text-center text-md-left mx-auto">
+							<h2 class="name mb-2">MATTON Jef</h2>
+							<div class="meta">{% trans "Python developer" %}</div>
+							<div class="meta mb-2">MboateK</div>
+							<ul class="social-list list-inline mb-0">
+								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							</ul><!--//social-list--> 
+						</div><!--//media-body-->
+					</div><!--//media-->
+					
+					<div class="desc p-4 p-lg-5">
+						<p>{% trans "I am just a guy passionated about programming stuffs. I like to help people reach their goals and discuss about computer science." %}<br>
+						{% trans "I am doing a lot of Python for hobbies and for work. Keep in touch xD" %}</p>
 					</div>
 				</div><!--//modal-body-->
 			</div><!--//modal-content-->

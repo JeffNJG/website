@@ -1,0 +1,108 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% block head %}
+	<title>{% block title %}Base{% endblock %} - pycm</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="currency exchange platform">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	{% endblock %}
+</head>
+
+
+<body>
+	{% block header %}
+	<!-- header section -->
+	<header class="header--section">
+	    <nav class="header navbar navbar-expand-md navbar-expand-md bg-primary text-light">
+	        <div class="header--container container">
+	            <!-- Brand -->
+	            <a class="header--brand navbar-brand" href="/">mbengFX</a>
+
+	            <!-- Toggler/collapsibe Button -->
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <!-- Navbar links -->
+	            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	                <ul class="header--ul navbar-nav ml-auto">
+                        <li class="nav-item">
+	                        <form action="{% url 'set_language' %}" method="post" class="">
+	                        {% csrf_token %}
+	                            <input name="next" type="hidden" value="{{ redirect_to }}" />
+	                            <input type="hidden" name="language" value="fr">
+	                            <a class="header--links nav-link" href="#" onclick="this.parentElement.submit()"><img src="/static/image/flags/fr.gif" width="25"></a>
+	                        </form>
+	                    </li>
+	                    <li class="nav-item">
+	                        <form action="{% url 'set_language' %}" method="post" class="">
+	                        {% csrf_token %}
+	                            <input name="next" type="hidden" value="{{ redirect_to }}" />
+	                            <input type="hidden" name="language" value="en">
+	                            <a class="header--links nav-link" href="#" onclick="this.parentElement.submit()"><img src="/static/image/flags/en.gif" width="25px"></a>
+	                        </form>
+	                    </li>
+
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/faq/">FAQ</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/orders/open/">{% trans "Marketplace" %}</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/privacy/">{% trans "Privacy" %}</a>
+	                    </li>
+	                    {% if user.is_authenticated %}
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/dashboard/">{% trans "Dashboard" %}</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/signout/">{% trans "Sign out" %}</a>
+	                    </li>
+	                    {% else %}
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/signin/">{% trans "Login" %}</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="header--links nav-link" href="/signup/">{% trans "Sign up" %}</a>
+	                    </li>
+	                    {% endif %}
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	</header>
+    {% endblock %}
+
+    <!-- actual main body content section -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- footer section -->
+    {% block footer %}
+    <footer class="section-footer">
+        <section class="footer container">
+              
+        </section>
+    </footer>
+    {% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/static/js/wow.min.js"></script>
+{% endblock %}
+
+{% block extra_scripts %}
+
+{% endblock %}
+
+</body>
+
+</html>
